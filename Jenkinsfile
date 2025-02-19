@@ -9,7 +9,7 @@ pipeline{
 
         stage('CheckOut') {
             steps{
-                Checkout scm
+                checkout scm
                 sh "echo current branch is : ${BRANCH_NAME}"
             }
         }
