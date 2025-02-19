@@ -16,7 +16,7 @@ pipeline{
 
         stage('Terraform init') {
             steps{
-                sh 'terraform init -reconfigure -auto-approve'
+                sh 'terraform init'
             }
         }
 
