@@ -32,5 +32,11 @@ pipeline{
             }
         }
 
+        stage('Terraform destroy') {
+            steps{
+                sh "terraform destroy -auto-approve -var-file=envs/${BRANCH_NAME}.tfvars"
+            }
+        }
+
     }
 }

@@ -1,5 +1,5 @@
 resource "aws_iam_user" "demouser" {
-  name = "terraform-user-${var.env}"
+  name = "terraform-iam-user-${var.env}"
 
   tags = {
     Environment = "${var.env}"
