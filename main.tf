@@ -6,5 +6,5 @@ module "s3_bucket" {
 
 module "iam_user" {
   source = "./modules/iam_user"
-  env = var.env
+  env    = var.env
 }
